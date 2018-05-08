@@ -633,7 +633,3 @@ function testb(){
     for(var i=0;i<1e4;i++){b();}
     console.timeEnd("b");
 }*/
-{% if theme.canvas_nest %}
-<script type="text/javascript"
-color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="./js/dot.js"></script>
-{% endif %}
