@@ -1,0 +1,1 @@
+{ "name": "身既死兮神以灵，魂魄毅兮为鬼雄。", "short_name": "简味", "display": "standalone", "start_url": "http://jiuwv.gitee.io/via/", "theme_color": "#ffffff", "background_color": "#ffffff", "icons": [ { "src": "./ico.png", "sizes": "256x256", "type": "image/png" } ] }

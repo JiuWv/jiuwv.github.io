@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,maximum-scale=1,initial-scale=1">
+<meta name="theme-color" content="#FFF">
+<title>主页</title>
+<!-- uc强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- qq强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- uc应用模式 -->
+<meta name="browsermode" content="application">
+<!-- qq应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- 适应移动端end -->
+<link rel="manifest" href="./manifest.json" />
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div id="main"><div id="logo"></div><div id="edit"></div><ul id="book"></ul></div>
+<script type="text/javascript" src="http://yiju.ml/api/word.php?m=js"></script>
+<script type="text/javascript">
+/*标题栏随机一句古诗词(适用于任何网页)
+*/
+var s = false; //显示来源信息，true为显示，false为不显示，默认不显示
+var t =document.getElementsByTagName("title")[0];
+if(s){
+t.innerHTML = str[0]+str[1];
+}else{
+t.innerHTML = str[0];
+}
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
