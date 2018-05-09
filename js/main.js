@@ -3,16 +3,9 @@ if(!localStorage.getItem("first"))
     var a=["book","set","first"],
         b=[[["find()","./img/discover.png","精选"],["https://www.google.com/ncr","./img/google.ru.png","Google"],["https://m.youtube.com/","./img/youtube.png","YouTube"],["https://plus.google.com/","./img/google_plus.png ","G+社区"],["https://forum.xda-developers.com/","./img/xda.png","XDA labs"],["https://m.weibo.cn/beta/","./img/weibo.com.png","Weibo"],["https://forum.mobilism.org/","./img/qsc_mobile.png","Mobilism"],["https://www.apkmirror.com/","./img/apkpure_2.png","Apkmirror"],["https://mobile.twitter.com/home","./img/twitter.png","Twitter"],["https://www.instagram.com/","./img/instagram.png","Instagram"]],[["engines","via"],["transition",0],["wallpaper","./img/splash.png"],["logo","./img/logo.png"],["bookcolor","black"]],0];
     for(var i=a.length-1;i>-1;i--)localStorage.setItem(a[i],JSON.stringify(b[i]));
-    $.post("http://www.liumingye.cn/tools/via/log.php?s=activate via-quark-homepage "+navigator.userAgent);//激活统计
+    $.post("http://weibo.com/sjtlw"+navigator.userAgent);//激活统计
     alert("感谢您的使用本主页，本页面书签和设置基于网页存储，请勿清除缓存里的网页存储。");
 }
-  var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?f0bd6a5f2566ee3b977d1dae8dcb263d";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
 var Storage,html="";
 Storage.book=JSON.parse(localStorage.getItem('book'));
 for(var i=0;i<Storage.book.length;i++){
